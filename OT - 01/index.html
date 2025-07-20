@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue com CDN</title>
+</head>
+
+<body>
+  <div id="app">{{ mensagem }}</div>
+
+  <!-- Vue via CDN (funciona com Live Server) -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        mensagem: 'Olá Mundo com Vue.js'
+      }
+    });
+  </script>
+</body>
+
+</html>
