@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue</title>
+  <style>
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{titulo}}</h1>
+    <img v-bind:src="'https://br.vuejs.org/images/logo.png'" v-bind:alt="'vuejs is awesome!'" v-bind:data-img-large="'https://br.vuejs.org/images/logo.png'" v-bind:alt="'VueJs is awesome!'">
+
+    <p :class="classe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eveniet voluptas animi velit aspernatur repudiandae! Error ut sit cupiditate quasi?</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
